@@ -1,12 +1,25 @@
 package testgit;
 
+
 public class Test02 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("test02忽略提交---");
-		System.out.println("test02还原到上个版本---");
-
+		String aString = "abc";
+		String b = "abc";
+		
+		String a = new String("abc");
+		String a1 = new String("abc");
+		System.out.println(a==a1);
+		
+		Test02 test02 = new Test02(null);
+	}
+	
+	public Test02(String str){
+		System.out.println("字符串："+str);
+	}
+	
+	public Test02(Object str){
+		System.out.println("对象："+str);
 	}
 
 }
